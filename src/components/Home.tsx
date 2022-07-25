@@ -8,7 +8,6 @@ const Home: React.FunctionComponent<IHomeProps> = props => {
     <div>
       <div>Here is Home </div>
       <HomeDialog />
-      <div>End</div>
     </div>
   );
 };

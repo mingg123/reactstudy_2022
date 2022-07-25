@@ -6,6 +6,7 @@ import {
   DialogContent,
   DialogTitle,
 } from "@material-ui/core";
+import CharacterCounter from "../components/CharacterCounter";
 interface IHomeDialogProps {}
 
 const HomeDialog: React.FunctionComponent<IHomeDialogProps> = props => {
@@ -23,7 +24,9 @@ const HomeDialog: React.FunctionComponent<IHomeDialogProps> = props => {
       </Button>
       <Dialog open={open} maxWidth={"lg"}>
         <DialogTitle id="homeDialogTitle">Title</DialogTitle>
-        <DialogContent>Content</DialogContent>
+        <DialogContent>
+          <CharacterCounter />
+        </DialogContent>
         <DialogActions>
           <Button onClick={onClose}>close</Button>
         </DialogActions>
